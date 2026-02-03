@@ -1,0 +1,16 @@
+P { color: red; }
+
+h2 {color:rgb(25, 0, 255); }
+
+#especial { 
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.importante { 
+    color:rgb(40, 97, 22);
+}
+
+body { 
+    background-color: rgb(247, 234, 217);
+}
