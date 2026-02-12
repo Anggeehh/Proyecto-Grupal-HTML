@@ -15,3 +15,9 @@ body {
    
 }
 
+.bebidas{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
