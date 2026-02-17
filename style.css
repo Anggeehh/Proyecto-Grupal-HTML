@@ -14,9 +14,10 @@ body {
     background-color: rgb(215, 255, 239);
    
 }
-.articulos{
+
+.articulos{ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center ;
+    justify-content: center;
     gap: 200px;
 }
