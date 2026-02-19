@@ -1,137 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GESTOR DE PRODUCTOS  </title> 
-    <link rel="stylesheet" href = "style.css">
+    <title>GESTOR DE PRODUCTOS</title> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header id="especial">
-        <!-- Este bloque contendrá el logo y el nombre de la App -->
-       <h1><strong>NUESTRO GESTOR DE PRODUCOS</strong></h1>
+        <h1>NUESTRO GESTOR DE PRODUCTOS</h1>
     </header>
-    <hr>
-
+    
     <main>
-        <p><section class="articulos"> 
-            <!-- Agrupamos los elementos de nuestra colección aquí -->
-            <h2>Drogueria</h2>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Lejia</h3>
-                <ul>
-                    <li><strong>Capacidad:</strong>2l</li>
-                    <li><strong>Capacidad:</strong>1l</li>
-                    <li><strong>Capacidad:</strong>0,5l</li>
-                </ul>
-                <img src="img/lejia.png" alt="lejia" width="200" >
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Detergente</h3>
-                <ul>
-                    <li><strong>Capacidad:</strong>2l</li>
-                    <li><strong>Capacidad:</strong>1l</li>
-                    <li><strong>Capacidad:</strong>0,5l</li>
-                </ul>
-                <img src="img/detergente.png" alt="detergente" width="200">
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Oxigeno activo</h3>
-                <ul> 
-                    <li><strong>Capacidad:</strong>2l</li>
-                    <li><strong>Capacidad:</strong>1l</li>
-                    <li><strong>Capacidad:</strong>0,5l</li>
-                </ul>
-                <img src="img/oxigeno.png" alt="oxigeno activo" width="200">
-            </article>
-
-        </p></section>
-        <hr>
-        </p><section class="articulos">
-            <!-- Agrupamos los elementos de nuestra colección aquí -->
-            <h2>Fruteria</h2>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Manzanas</h3>
-                <ul>
-                    <li><strong>Pack::</strong>4ud</li>
-                    <li><strong>Pack::</strong>8ud</li>
-                    <li><strong>Pack::</strong>12ud</li>
-                </ul>
-                <img src="img/manzana-removebg-preview.png" alt="Manzanas" width="200">
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Albaricoques</h3> 
-                 <ul>
-                    <li><strong>Pack::</strong>4ud</li>
-                    <li><strong>Pack::</strong>8ud</li>
-                    <li><strong>Pack::</strong>12ud</li>
-                </ul>
-                <img src="img/albaricoque.png" alt="Albaricoques" width="200">
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Peras</h3>
-                 <ul>
-                    <li><strong>Pack::</strong>4ud</li>
-                    <li><strong>Pack::</strong>8ud</li>
-                    <li><strong>Pack:</strong>12ud</li>
-                </ul>
-                <img src="img/peras.png" alt="peras" width="200">
+        <section> 
+            <h2>Droguería</h2>
             
-            </article>
+            <div class="contenedor-productos">
+                <article class="ficha-producto">
+                    <h3>Lejía</h3>
+                    <a href="#">
+                        <img src="img/lejia.png" alt="Botella de lejía amarilla" width="200">
+                    </a>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 1L</li>
+                        <li><strong>Stock:</strong> No</li>
+                    <p></p>
+                        <li><strong>Capacidad:</strong> 2L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    <p></p>
+                        <li><strong>Capacidad:</strong> 5L</li>
+                        <li><strong>Stock:</strong> No</li>
+                    </ul>
+                </article>
 
-        </p></section>
+                <article class="ficha-producto">
+                    <h3>Detergente</h3>
+                    <a href="#">
+                        <img src="img/detergente.png" alt="Botella de detergente Marsella" width="200">
+                    </a>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 2L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    <p></p>
+                        <li><strong>Capacidad:</strong> 5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    
+                    </ul>
+                </article>
+
+                <article class="ficha-producto">
+                    <h3>Oxígeno Activo</h3>
+                    <a href="#">
+                        <img src="img/oxigeno.png" alt="Botella de oxígeno activo azul" width="200">
+                    </a>
+                    <ul> 
+                        <li><strong>Capacidad:</strong> 1L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    <p></p>
+                        <li><strong>Capacidad:</strong> 1,5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    <p></p>
+                        <li><strong>Capacidad:</strong> 5L</li>
+                        <li><strong>Stock:</strong> No</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
         <hr>
-        <p><section class="articulos">
-            <!-- Agrupamos los elementos de nuestra colección aquí -->
+
+        <section>
+            <h2>Frutería</h2>
+            
+            <div class="contenedor-productos">
+                <article class="ficha-producto">
+                    <h3>Manzanas</h3>
+                    <a href="#">
+                        <img src="img/manzana-removebg-preview.png" alt="Manzanas rojas frescas" width="200">
+                    </a>
+                    <ul>
+                        <li><strong>Pack:</strong> 4ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 6ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 8ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    </ul>
+                </article>
+
+                <article class="ficha-producto">
+                    <h3>Albaricoques</h3> 
+                    <a href="#">
+                        <img src="img/albaricoque.png" alt="Albaricoques maduros" width="200">
+                    </a>
+                     <ul>
+                        <li><strong>Pack:</strong> 4ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 6ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 8ud</li>
+                        <li><strong>Stock:</strong> No</li>
+                    </ul>
+                </article>
+
+                <article class="ficha-producto">
+                    <h3>Peras</h3>
+                    <a href="#">
+                        <img src="img/peras.png" alt="Peras conferencia" width="200">
+                    </a>
+                     <ul>
+                        <li><strong>Pack:</strong> 4ud</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 6ud</li>
+                        <li><strong>Stock:</strong> No</li>
+                        <p></p>
+                        <li><strong>Pack:</strong> 8ud</li>
+                        <li><strong>Stock:</strong> No</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
             <h2>Bebidas</h2>
-        
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Agua</h3>
-                <ul>
-                    <li><strong>Capacidad:</strong>8l</li>
-                    <li><strong>Capacidad:</strong>5l</li>
-                    <li><strong>Capacidad:</strong>2l</li>
-                    <li><strong>Capacidad:</strong>0,5l</li>
-                </ul>
-                <img src="img/agua.png" alt= "Botella de agua" width="200">
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Coca Cola</h3>
-                <ul>
-                    <li><strong>Capacidad:</strong>2l</li>
-                    <li><strong>Capacidad:</strong>1,5l</li>
-                    <li><strong>Capacidad:</strong>0,33l</li>
-                </ul>
-                <img src="img/coca.png" alt= "lata de coca" width="200">
-            </article>
-            <article>
-                <!-- Cada elemento individual de la colección es un article -->
-                <h3>Fuze Tea: Maracuyá</h3>
-                <ul> 
-                    <li><strong>Capacidad:</strong>1,5l</li>
-                    <li><strong>Capacidad:</strong>0,5l</li>
-                    <li><strong>Capacidad:</strong>0,33l</li>
-                </ul>
-                <img src="img/nestea.png" alt= "lata de fuze tea maracuyá" width="200">
-            </article>
+            
+            <div class="contenedor-productos">
+                <article class="ficha-producto">
+                    <h3>Agua Mineral</h3>
+                    <a href="#">
+                        <img src="img/agua.png" alt="Botella de agua azul" width="200">
+                    </a>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 33cl</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 1,5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 8L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        
+                    </ul>
+                </article>
 
-        </p></section>
-        <hr>
+                <article class="ficha-producto">
+                    <h3>Coca Cola</h3>
+                    <a href="#">
+                        <img src="img/coca.png" alt="Lata de Coca Cola roja" width="200">
+                    </a>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 33cl</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 50cl</li>
+                        <li><strong>Stock:</strong> No</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 1,5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    </ul>
+                </article>
+
+                <article class="ficha-producto">
+                    <h3>Fuze Tea</h3>
+                    <a href="#">
+                        <img src="img/nestea.png" alt="Lata de té verde sabor maracuyá" width="200">
+                    </a>
+                    <ul> 
+                        <li><strong>Capacidad:</strong> 33cl</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 1L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                        <p></p>
+                        <li><strong>Capacidad:</strong> 1,5L</li>
+                        <li><strong>Stock:</strong> Si</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Créditos y fecha del proyecto -->
-        Pie de página: Creado por Ángel Piñero Orellana, José Ramirez López y Jose Carlos Vallejo Pérez
+        <p>Trabajo realizado por Ángel Piñero, José Ramirez y Jose Carlos Vallejo.</p>
+        
     </footer>
  
 </body>
