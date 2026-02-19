@@ -1,23 +1,109 @@
-P { color: red; }
+/* --- ESTILOS GENERALES --- */
+body { 
+    /* REQUISITO: Color de fondo y Fuente externa (Extra) */
+    background-color: rgb(215, 255, 239);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-h2 {color:rgb(5, 43, 117); }
-
-h3 {color:rgb(33, 122, 180)}
-
-main{color:rgb(87, 85, 85)}
+/* REQUISITO: Header con ID */
 #especial { 
-    font-family: sans-serif;
+    background-color: rgb(5, 43, 117);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid rgb(33, 122, 180);
+}
+
+main {
+    color: rgb(87, 85, 85);
+    padding: 20px;
+}
+
+/* --- TÍTULOS --- */
+h2 {
+    color: rgb(5, 43, 117); 
+    text-align: center;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(33, 122, 180);
     text-align: center;
 }
 
-body { 
-    background-color: rgb(215, 255, 239);
-   
+/* --- DISEÑO FLEXBOX (LAYOUT) --- */
+.contenedor-productos {
+    /* REQUISITO: Implementación de Flexbox */
+    display: flex;
+    flex-wrap: wrap; /* Para que bajen si no caben */
+    justify-content: center; /* Centrado */
+    gap: 30px; /* Espacio entre artículos */
 }
 
-.articulos{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 200px;
+/* --- TARJETAS DE PRODUCTO (ARTICLE) --- */
+.ficha-producto {
+    background-color: white;
+    
+    /* REQUISITO: Modelo de Cajas (Border, Padding, Margin) */
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px; /* Ancho fijo para cada tarjeta */
+    
+    /* REQUISITO EXTRA: Bordes redondeados y Sombra (Layout Complejo) */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    
+    /* REQUISITO EXTRA: Transición suave para el hover */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* REQUISITO EXTRA: Interactividad (:hover) */
+/* Al pasar el ratón, la tarjeta crece un poco y cambia el borde */
+.ficha-producto:hover {
+    transform: scale(1.05);
+    border-color: rgb(5, 43, 117);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Ajustes de imágenes dentro de la tarjeta */
+.ficha-producto img {
+    display: block;
+    margin: 0 auto; /* Centrar imagen */
+    max-width: 100%;
+    height: auto;
+}
+
+.ficha-producto ul {
+    list-style-type: square; /* Cambiar puntitos por cuadrados */
+    padding-left: 20px;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: rgb(5, 43, 117);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* --- RESPONSIVE (MÓVIL) --- */
+/* REQUISITO: @media para adaptar a móvil */
+@media (max-width: 600px) {
+    .contenedor-productos {
+        flex-direction: column; /* Poner uno debajo de otro */
+        align-items: center;
+    }
+    
+    .ficha-producto {
+        width: 80%; /* En móvil ocupan casi todo el ancho */
+    }
+    
+    h1 {
+        font-size: 1.5em; /* Título más pequeño en móvil */
+    }
 }
