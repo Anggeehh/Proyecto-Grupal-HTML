@@ -106,4 +106,31 @@ footer {
     h1 {
         font-size: 1.5em; /* Título más pequeño en móvil */
     }
+} 
+
+/* --- MODO ALTERNATIVO (ACTIVADO POR JS) --- */
+.modo-alternativo {
+    background-color: rgb(5, 43, 117); /* Azul oscuro del header */
+    color: white;
+}
+
+/* Ajuste de textos dentro del modo alternativo */
+.modo-alternativo h2,
+.modo-alternativo h3 {
+    color: rgb(215, 255, 239); /* Verde menta del fondo original */
+}
+
+/* Tarjetas en modo alternativo */
+.modo-alternativo .ficha-producto {
+    background-color: rgb(33, 122, 180); /* Azul medio */
+    color: white;
+    border-color: rgb(215, 255, 239);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Hover en modo alternativo */
+.modo-alternativo .ficha-producto:hover {
+    background-color: rgb(5, 43, 117);
+    border-color: white;
+    transform: scale(1.07);
 }
