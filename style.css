@@ -134,3 +134,9 @@ footer {
     border-color: white;
     transform: scale(1.07);
 }
+
+#titulo {
+    font-family: 'Bangers', system-ui; /* Aplicamos la nueva fuente característica */
+    letter-spacing: 2px;               /* Un poco de espacio entre letras */
+    font-size: 3em;                    /* Hacemos el título más grande */
+}
