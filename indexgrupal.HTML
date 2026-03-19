@@ -19,7 +19,14 @@
     <main>
         <button id="boton-magico">Cambiar modo</button>
 
-        <section> 
+        <div id="filtros" class="contenedor-filtros">
+            <button class="btn-filtro active" data-filtro="todos">Todos</button>
+            <button class="btn-filtro" data-filtro="drogueria">Droguería</button>
+            <button class="btn-filtro" data-filtro="fruteria">Frutería</button>
+            <button class="btn-filtro" data-filtro="bebidas">Bebidas</button>
+        </div>
+
+        <section data-categoria="drogueria"> 
             <h2>Droguería</h2>
             
             <div class="contenedor-productos">
@@ -76,7 +83,7 @@
 
         <hr>
 
-        <section>
+        <section data-categoria="fruteria">
             <h2>Frutería</h2>
             
             <div class="contenedor-productos">
@@ -135,7 +142,7 @@
 
         <hr>
 
-        <section>
+        <section data-categoria="bebidas">
             <h2>Bebidas</h2>
             
             <div class="contenedor-productos">
@@ -197,9 +204,17 @@
         </section>
     </main>
 
+    <div id="modal-producto" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h2 id="modal-titulo">Título Producto</h2>
+            <img id="modal-imagen" src="" alt="Imagen del producto" width="200">
+            <ul id="modal-detalles"></ul>
+        </div>
+    </div>
+
     <footer>
         <p>Trabajo realizado por Ángel Piñero, José Ramirez y Jose Carlos Vallejo.</p>
-        
     </footer>
   <script src="main.js"></script>
 </body>
